@@ -13,9 +13,6 @@ const download = () => {
             <div>
                 Isn't published yet..
             </div>
-            <div className="flex items-center">
-                uwu
-            </div>
         </div>
     </div>
   )
