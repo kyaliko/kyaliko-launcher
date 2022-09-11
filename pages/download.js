@@ -11,7 +11,7 @@ const download = () => {
 
         <div className="flex h-screen items-center justify-center rounded-md text-center font-mono selection:bg-slate-700 selection:">
             <div>
-                Isn't published yet..
+                Isnt published yet..
             </div>
         </div>
     </div>

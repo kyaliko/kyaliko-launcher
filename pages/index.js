@@ -11,11 +11,11 @@ export default function Home() {
       </Head>
 
       <div className="flex h-screen justify-center items-center">
-        <a href="/download">
+        <Link href="/download">
           <button className="transition ease-in-out duration-500 p-2 bg-slate-700 rounded-md hover:scale-125 hover:bg-gray-800 font-semibold">
             Download
           </button>
-        </a>
+        </Link>
           
       </div>
     </div>
