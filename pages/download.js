@@ -2,7 +2,7 @@ import Head from 'next/head'
 
 const download = () => {
   return (
-    <div className="bg-gradient-to-br from-slate-600 to-slate-900">
+    <div className="bg-black">
         <Head>
             <title>Kyaliko Launcher</title>
             <meta name="description" content="A normal minecraft launcher" />

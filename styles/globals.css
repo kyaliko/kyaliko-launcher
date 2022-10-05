@@ -9,6 +9,95 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
+:root{
+  --clr-bg: #D9FFFF;
+  --clr-uwu: #000000;
+}
+
+.neon-button{
+  font-size: 2rem;
+  font-weight: 700;
+
+  
+  display:inline-block;
+  cursor: pointer;
+  text-decoration: none;
+
+  color: var(--clr-uwu);
+  background: var(--clr-bg);
+  border-radius: 0.25em;
+
+  padding: 0.25em 1em;
+
+  box-shadow: 0 0 0.5em 0 var(--clr-bg);
+
+  position: relative;
+
+  transform: perspective(10em) rotateX(90deg) rotateY(0deg) translateZ(-100px);
+
+  transition: ease-in-out 1s;
+}
+
+::-webkit-scrollbar {
+  width: 1em;
+}
+::-webkit-scrollbar-track {
+  background: #1e1e2e;
+}
+::-webkit-scrollbar-thumb {
+  background: #393a4b;
+  border: .25em solid #1e1e2e;
+  border-radius: 10px;
+  transition: background 1s;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3D3853;
+  border-radius: 10px;
+}
+
+.neon-button::before{
+  pointer-events: none;
+  content: '';
+  position: absolute;
+  background: var(--clr-bg);
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  transform: perspective(1em) rotateX(40deg) scale(1, 0.35);
+  opacity: 0;
+  filter:blur(1em);
+  transition: ease-in-out 1s;
+}
+
+.neon-button:hover::before{
+  top: 120%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 100;
+}
+
+.neon-button:hover{
+  transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  font-size: 4rem;
+  box-shadow: none;
+}
+
+.neon-button:active{
+  
+}
+
+.uwu-text{
+  font-size: 2rem;
+  opacity: 0;
+  color: white;
+
+}
+
+
+
 
 a {
   color: inherit;
@@ -27,4 +116,6 @@ a {
     color: white;
     background: black;
   }
+
+  
 }
